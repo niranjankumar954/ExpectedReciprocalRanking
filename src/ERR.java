@@ -47,28 +47,5 @@ public class ERR {
             ExpectedReciprocalRank = ExpectedReciprocalRank + productCalulation;
         }
         System.out.println("ExpectedReciprocalRank@"+documentCount+"="+ExpectedReciprocalRank);
-        /*System.out.println("Entered Grades are:");
-        for (int i = 0 ; i < documentCount ; i++){
-            System.out.println(grade[i]);
-        }*/
-        //Compute the proability satisfaction of document k
-        /*for (int k = 0 ; k < documentCount ; k++){
-            probabilitySatifactionOfDocument[k] = (Math.pow(2,grade[k]) - 1)/16;
-        }
-        System.out.println("Probability Satisfaction of Document");
-        for (int i = 0 ; i < documentCount ; i++) {
-            System.out.println(probabilitySatifactionOfDocument[i]);
-        }
-        probabilityOfStopDocument[0]  = probabilitySatifactionOfDocument[0];
-        for (int j = 1 ; j < documentCount ; j++ ){
-            for (int k =0 ; k < j ; k++){
-                probabilityOfStopDocument[j] = probabilitySatifactionOfDocument[j] * (1- probabilitySatifactionOfDocument[j-1]);
-            }
-
-        }
-        System.out.println("Probability Stop at Document K");
-        for (int i = 0 ; i < documentCount ; i++) {
-            System.out.println(probabilityOfStopDocument[i]);
-        }*/
     }
 }
